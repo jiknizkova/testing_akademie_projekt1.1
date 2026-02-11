@@ -1,1 +1,5 @@
-print("zkouška")
+print("Správce úkolů - Hlavní menu")
+print("1. Přidat nový úkol")
+print ("2. Zobrazit úkoly ")
+print ("3. Odstranit úkol")
+print("4. Konec programu")
