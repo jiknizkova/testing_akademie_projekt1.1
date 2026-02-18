@@ -59,6 +59,7 @@ while True:
          odstranit_ukol()
 
     elif akce_uzivatele == "4":
+        print("Konec programu")
         break
 
     else:
