@@ -9,11 +9,25 @@ def hlavni_menu():
     print()
 
 def pridat_ukol():
-    nazev_ukolu = input ("vložte název úkolu: ")
-    popis_ukolu = input ("vložte popis úkolu: ")
-    ukoly.append(f"{nazev_ukolu} - {popis_ukolu}")
-    print ("přidali jste úkol", nazev_ukolu)
-    print()
+    while True:
+        nazev_ukolu = input ("vložte název úkolu: ")
+        if nazev_ukolu == "":
+            pokyn = input("Jejda, nezdali jste nic. Pokud se raději chccete vrátit do menu, stisknete kláves 'm' a enter."
+            "Stiskem jakékoliv jiné klávesy se vrátíte zpět k možnosti zadat název úkolu. ")
+            if pokyn == "m":
+                break
+        else:
+            popis_ukolu = input ("vložte popis úkolu: ")
+            if popis_ukolu == "":
+                pokyn = input("Jejda, nezdali jste nic. Pokud se raději chccete vrátit do menu, stisknete kláves 'm' a enter. "
+                "Stiskem jakékoliv jiné klávesy se vrátíte zpět k možnosti zadání názvu a popisu úkolu. ")
+                if pokyn == "m":
+                    break
+            else:
+                ukoly.append(f"{nazev_ukolu} - {popis_ukolu}")
+                print ("přidali jste úkol", nazev_ukolu)
+                print()
+                break
 
 def zobrazit_ukoly():
     if len(ukoly)>0:
@@ -33,7 +47,7 @@ def odstranit_ukol():
         pocet_ukolu = len(ukoly)
         if cislo_ukolu > pocet_ukolu:
             print ("Ups, tenhle úkol v seznamu nemáme. Zkuste to znovu")
-            rozhodnuti = input("Pokud se raději chcete vrátit zpět do menu, stisknete klávesu M. ")
+            rozhodnuti = input("Pokud se raději chcete vrátit zpět do menu, stisknete klávesu 'm' a enter. ")
             if rozhodnuti == "m":
                 break
         else:
