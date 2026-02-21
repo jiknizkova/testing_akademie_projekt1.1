@@ -12,14 +12,14 @@ def pridat_ukol():
     while True:
         nazev_ukolu = input ("Zadejte název úkolu: ")
         if nazev_ukolu == "":
-            pokyn = input("Jejda, nezdali jste nic. Pokud se raději chccete vrátit do menu, stisknete kláves 'm' a enter."
+            pokyn = input("Jejda, nezadali jste nic. Pokud se raději chcete vrátit do menu, stisknete klávesu 'm' a enter."
             "Stiskem jakékoliv jiné klávesy se vrátíte zpět k možnosti zadat název úkolu. ")
             if pokyn == "m":
                 break
         else:
             popis_ukolu = input ("Zadejte popis úkolu: ")
             if popis_ukolu == "":
-                pokyn = input("Jejda, nezdali jste nic. Pokud se raději chccete vrátit do menu, stisknete kláves 'm' a enter. "
+                pokyn = input("Jejda, nezadali jste nic. Pokud se raději chcete vrátit do menu, stisknete klávesu 'm' a enter. "
                 "Stiskem jakékoliv jiné klávesy se vrátíte zpět k možnosti zadání názvu a popisu úkolu. ")
                 if pokyn == "m":
                     break
@@ -60,12 +60,12 @@ def odstranit_ukol():
                     else:
                         print ("Ups, tenhle úkol v seznamu nemáme. Zkuste to znovu")
                         rozhodnuti = input("Pokud se raději chcete vrátit zpět do menu, stisknete klávesu 'm' a enter."
-                        "Stiskem jakékoliv jiné klávesy se dostanete zppět k výběru úkolů. ")
+                        "Stiskem jakékoliv jiné klávesy se dostanete zpět k výběru úkolů. ")
                         if rozhodnuti == "m":
                             break
                     
                 except ValueError:
-                    print ("Jej, zadali jste neplatnou hodnotu, zkuste to znovu")
+                    print ("Jej, zadali jste neplatnou hodnotu, zkuste to znovu.")
 
                
 
