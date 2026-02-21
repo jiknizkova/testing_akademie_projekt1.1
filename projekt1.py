@@ -12,7 +12,7 @@ def pridat_ukol():
     while True:
         nazev_ukolu = input ("Zadejte název úkolu: ")
         if nazev_ukolu == "":
-            pokyn = input("Jejda, nezadali jste nic. Pokud se raději chcete vrátit do menu, stisknete klávesu 'm' a enter."
+            pokyn = input("Jejda, nezadali jste nic. Pokud se raději chcete vrátit do menu, stisknete klávesu 'm' a enter. "
             "Stiskem jakékoliv jiné klávesy se vrátíte zpět k možnosti zadat název úkolu. ")
             if pokyn == "m":
                 break
@@ -58,8 +58,8 @@ def odstranit_ukol():
                         break
             
                     else:
-                        print ("Ups, tenhle úkol v seznamu nemáme. Zkuste to znovu")
-                        rozhodnuti = input("Pokud se raději chcete vrátit zpět do menu, stisknete klávesu 'm' a enter."
+                        print ("Ups, tenhle úkol v seznamu nemáme, zkuste to znovu.")
+                        rozhodnuti = input("Pokud se raději chcete vrátit zpět do menu, stisknete klávesu 'm' a enter. "
                         "Stiskem jakékoliv jiné klávesy se dostanete zpět k výběru úkolů. ")
                         if rozhodnuti == "m":
                             break
